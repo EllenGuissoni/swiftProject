@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,7 +19,7 @@
 
 /* Begin PBXFileReference section */
 		9FC488A74F9A7C534C890755 /* Pods-RH.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RH.release.xcconfig"; path = "Target Support Files/Pods-RH/Pods-RH.release.xcconfig"; sourceTree = "<group>"; };
-		BC0A03C7237B064E00DDD7C4 /* RH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RH.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC0A03C7237B064E00DDD7C4 /* SwiftProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC0A03CA237B064E00DDD7C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC0A03CC237B064E00DDD7C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BC0A03CE237B064E00DDD7C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +50,6 @@
 				C74CC82D247E5AD8AF3EC9C2 /* Pods-RH.debug.xcconfig */,
 				9FC488A74F9A7C534C890755 /* Pods-RH.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -75,7 +74,7 @@
 		BC0A03C8237B064E00DDD7C4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BC0A03C7237B064E00DDD7C4 /* RH.app */,
+				BC0A03C7237B064E00DDD7C4 /* SwiftProject.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,16 +82,64 @@
 		BC0A03C9237B064E00DDD7C4 /* RH */ = {
 			isa = PBXGroup;
 			children = (
-				BC0A03CA237B064E00DDD7C4 /* AppDelegate.swift */,
-				BC0A03CC237B064E00DDD7C4 /* SceneDelegate.swift */,
-				BC0A03CE237B064E00DDD7C4 /* ViewController.swift */,
-				BC589B80237CE57400B21B56 /* HeaderCell.swift */,
-				BC0A03D3237B065300DDD7C4 /* Assets.xcassets */,
-				BC0A03D5237B065300DDD7C4 /* LaunchScreen.storyboard */,
 				BC0A03D8237B065300DDD7C4 /* Info.plist */,
-				BCDD14C8238596B000737CED /* BodyCell.swift */,
+				BC737888238832A100E6F441 /* Application */,
+				BC737889238832DD00E6F441 /* Controllers */,
+				BC73788B2388339300E6F441 /* Models */,
+				BC73788A2388331400E6F441 /* Resources */,
+				BC73788D2388342100E6F441 /* Storyboards */,
+				BC73788C238833D200E6F441 /* VIews */,
 			);
 			path = RH;
+			sourceTree = "<group>";
+		};
+		BC737888238832A100E6F441 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				BC0A03CA237B064E00DDD7C4 /* AppDelegate.swift */,
+				BC0A03CC237B064E00DDD7C4 /* SceneDelegate.swift */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		BC737889238832DD00E6F441 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BC0A03CE237B064E00DDD7C4 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BC73788A2388331400E6F441 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BC0A03D3237B065300DDD7C4 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BC73788B2388339300E6F441 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BC73788C238833D200E6F441 /* VIews */ = {
+			isa = PBXGroup;
+			children = (
+				BC589B80237CE57400B21B56 /* HeaderCell.swift */,
+				BCDD14C8238596B000737CED /* BodyCell.swift */,
+			);
+			name = VIews;
+			sourceTree = "<group>";
+		};
+		BC73788D2388342100E6F441 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BC0A03D5237B065300DDD7C4 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -114,7 +161,7 @@
 			);
 			name = RH;
 			productName = RH;
-			productReference = BC0A03C7237B064E00DDD7C4 /* RH.app */;
+			productReference = BC0A03C7237B064E00DDD7C4 /* SwiftProject.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -356,8 +403,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ellenguissoni.RH;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ellenguissoni.SwiftProject;
+				PRODUCT_NAME = SwiftProject;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -374,8 +421,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ellenguissoni.RH;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ellenguissoni.SwiftProject;
+				PRODUCT_NAME = SwiftProject;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
